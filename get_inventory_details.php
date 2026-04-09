@@ -1,6 +1,6 @@
 <?php
 try {
-    $conn = new PDO("mysql:host=localhost;dbname=db_cc205test", "root","");
+    $conn = new PDO("mysql:host=sql305.infinityfree.com;dbname=if0_41611143_dbfarmtomarket", "if0_41611143","lo3HSuyJIl");
     
     $stmt = $conn->prepare("SELECT inv.inventory_id, inv.product_id, inv.quantity_available, inv.date_updated, 
                                    prod.product_name, prod.category, prod.unit_price, prod.farmer_id,
