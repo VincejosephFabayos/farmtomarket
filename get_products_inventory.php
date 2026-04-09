@@ -1,6 +1,6 @@
 <?php
 try {
-    $conn = new PDO("mysql:host=localhost;dbname=db_cc205test", "root","");
+    $conn = new PDO("mysql:host=sql305.infinityfree.com;dbname=if0_41611143_dbfarmtomarket", "if0_41611143","lo3HSuyJIl");
     
     $stmt = $conn->prepare("SELECT prod.product_id, prod.farmer_id, prod.product_name, prod.category, prod.description, prod.unit_price, prod.status,COALESCE(inv.quantity_available, 0) as quantity_available FROM tb_product prod LEFT JOIN tb_inventory inv ON prod.product_id = inv.product_id ORDER BY prod.category, prod.product_name");
     $stmt->execute();
