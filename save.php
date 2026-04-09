@@ -1,6 +1,6 @@
 <?php
 try {
-    $conn = new PDO("mysql:host=localhost;dbname=db_cc205test", "root","");
+    $conn = new PDO("mysql:host=sql305.infinityfree.com;dbname=if0_41611143_dbfarmtomarket", "if0_41611143","lo3HSuyJIl");
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch(PDOException $e) {
     echo json_encode(["msg"=>"error", "error"=>$e->getMessage()]);
